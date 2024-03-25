@@ -9,28 +9,19 @@ const Index = () => {
   const [index, setIndex] = useState(1);
   const [position, setPosition] = useState(0);
 
-  // const container = document.querySelector(".swiper-container");
-  // console.log("전체 스와이퍼 가로길이", container.offsetWidth);
-  // length: 스와이퍼 개수
   const { length } = document.querySelectorAll(".swiper-item");
 
-  // container.style.left = -100 + "%";
-
   const Prev = () => {
-    console.log("이전????");
     if (index === 1) {
       setPosition(-100 * (length - 1));
       setIndex(length);
-      console.log("변경?", length, index);
     } else {
-      console.log("마지막");
       setPosition(position - -100);
       setIndex(index - 1);
     }
   };
 
   const Next = () => {
-    console.log("다음?");
     if (index == length) {
       setPosition(0);
       setIndex(1);
@@ -43,8 +34,6 @@ const Index = () => {
   useEffect(() => {
     const container = document.querySelector(".swiper-container");
 
-    console.log("지금 순서는??", index);
-    console.log("지금 위치는??", position);
     container.style.left = position + "%";
     container.style.transition = "1s";
   }, [index, position]);
@@ -70,14 +59,14 @@ const Index = () => {
           <div className="absolute top-1/2 translate-y-1/2 left-10">
             <IoIosArrowBack
               size={60}
-              style={{ color: "black", opacity: "50%", cursor: "pointer" }}
+              style={{ color: "60a5fa", cursor: "pointer" }}
               onClick={Prev}
             />
           </div>
           <div className="absolute top-1/2 translate-y-1/2 right-10">
             <IoIosArrowForward
               size={60}
-              style={{ color: "black", opacity: "50%", cursor: "pointer" }}
+              style={{ color: "60a5fa", cursor: "pointer" }}
               onClick={Next}
             />
           </div>
