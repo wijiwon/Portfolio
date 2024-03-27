@@ -62,7 +62,7 @@ const index = () => {
         </div>
       </div>
       <div className="flex">
-        <div className="w-full p-5">
+        <div className="w-full px-5">
           <ul>
             <li>
               <div className="text-start font-extrabold text-[23px] mt-3">
@@ -83,10 +83,14 @@ const index = () => {
             </li>
             <li>
               <div className="text-start font-extrabold text-[23px] mt-3">
-                개발 인원
+                개발 인원 & 담당 업무
               </div>
-              <div className="text-start">5명 (contract 3명 / front 2명)</div>
+                <div className="text-start">5명 (contract 3명 / front 2명)</div>
+                <div className="text-start mt-1">
+                  frontend (개발 환경설정, 페이지 구현 및 배포)
+                </div>
             </li>
+
             <li>
               <div className="text-start font-extrabold text-[23px] mt-3">
                 기술 스택
@@ -104,16 +108,8 @@ const index = () => {
             </li>
           </ul>
         </div>
-        <div className="w-full">
+        <div className="w-full pr-5">
           <ul>
-            <li>
-              <div className="text-start font-extrabold text-[23px] mt-3">
-                담당 업무
-              </div>
-              <div className="text-start">
-                frontend (개발 환경설정, 페이지 구현 및 배포)
-              </div>
-            </li>
             <li>
               <div className="text-start font-extrabold text-[23px] mt-3">
                 주요 업무
