@@ -17,6 +17,11 @@ module.exports = {
         },
       },
     },
+    screens: {
+      mobile: { min: "0px", max: "480px" },
+      // onepageX: { min: "481px", max: "1050px" },
+      pc: { min: "480px" },
+    },
   },
   plugins: [],
 };

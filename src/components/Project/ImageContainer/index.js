@@ -51,18 +51,18 @@ const ImageContainer = ({ Imgs }) => {
   }, [imgIndex, ImgPosition, imglength, applyTransition]);
 
   return (
-    <div className="relative w-full h-[300px] overflow-hidden">
+    <div className="relative w-full pc:h-[300px] mobile:h-[180px] overflow-hidden">
       <div ref={containerRef} className="image-container absolute flex ">
         <Imgs />
       </div>
-      <div className="absolute top-1/2 left-3 z-10">
+      <div className="absolute top-1/2 left-3 z-10 mobile:border-2 mobile:rounded-full mobile:border-[#60a5fa]">
         <IoIosArrowBack
           size={30}
           style={{ color: "60a5fa", cursor: "pointer" }}
           onClick={_Prev}
         />
       </div>
-      <div className="absolute top-1/2 right-3 z-10">
+      <div className="absolute top-1/2 right-3 z-10 mobile:border-2 mobile:rounded-full mobile:border-[#60a5fa]">
         <IoIosArrowForward
           size={30}
           style={{ color: "60a5fa", cursor: "pointer" }}

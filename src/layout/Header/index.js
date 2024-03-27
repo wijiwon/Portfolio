@@ -6,17 +6,13 @@ const index = ({ tap1, tap2, tap3, tap4 }) => {
   console.log("??", tap3);
   console.log("??", tap4);
 
-  const Taps = (value) => {
-    console.log("click", value);
-    window.scrollTo({ top: value, left: 0, behavior: "auto" });
-  };
 
   return (
     <div className="h-[60px] w-full fixed bg-white bg-opacity-50 flex row items-center justify-between font-['GmarketSansMedium'] z-10">
-      <div className="ml-[30px] font-extrabold hover:text-[#60a5fa]">
+      <div className="ml-[30px] font-extrabold hover:text-[#60a5fa] mobile:hidden">
         Wijiwon Portfolio
       </div>
-      <div className="flex mr-[30px]">
+      <div className="flex pc:mr-[30px] mobile:text-[13px] mobile:w-full motion-safe:justify-around">
         <a
           className="mr-[20px] cursor-pointer hover:text-[#60a5fa]"
           href="#sectionOne"

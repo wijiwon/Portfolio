@@ -25,7 +25,7 @@ function App() {
   };
 
   return (
-    <div className="App relative">
+    <div className="App relativex pc:min-w-[1050px] mobile:min-w-[370px]">
       <Header />
       <SectionsContainer {...options}>
         <Section>
