@@ -1,6 +1,6 @@
 import React from "react";
 import ImageContainer from "../../../components/Project/ImageContainer";
-import BounswapImgs from "../../../components/Project/ImageContainer/Bounswap";
+import NodeProjectImgs from "../../../components/Project/ImageContainer/NodeProject";
 
 import { FaCheck, FaNodeJs, FaHtml5 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -11,7 +11,7 @@ const index = () => {
     <div className="flex flex-col mx-[30px]">
       <div className="flex w-full">
         <div className="w-full p-5">
-          <ImageContainer Imgs={BounswapImgs} />
+          <ImageContainer Imgs={NodeProjectImgs} />
         </div>
         <div className="w-full">
           <p className="p-5 text-[30px] font-extrabold">페이지 소개</p>

@@ -1,6 +1,6 @@
 import React from "react";
 import ImageContainer from "../../../components/Project/ImageContainer";
-import BounswapImgs from "../../../components/Project/ImageContainer/Bounswap";
+import NoBrokerImgs from "../../../components/Project/ImageContainer/NoBroker";
 
 import { FaReact, FaCheck, FaNodeJs } from "react-icons/fa";
 import { SiAmazonaws, SiReactquery, SiMysql, SiExpress } from "react-icons/si";
@@ -10,7 +10,7 @@ const index = () => {
     <div className="flex flex-col mx-[30px]">
       <div className="flex w-full">
         <div className="w-full p-5">
-          <ImageContainer Imgs={BounswapImgs} />
+          <ImageContainer Imgs={NoBrokerImgs} />
         </div>
         <div className="w-full">
           <p className="p-3 text-[30px] font-extrabold">페이지 소개</p>

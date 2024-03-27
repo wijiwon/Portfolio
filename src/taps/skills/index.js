@@ -7,8 +7,6 @@ import {
   FaReact,
   FaNodeJs,
   FaAws,
-  FaHtml5,
-  FaCss3,
   FaFigma,
 } from "react-icons/fa";
 import {

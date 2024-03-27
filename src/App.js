@@ -31,13 +31,16 @@ function App() {
         <Section>
           <About />
         </Section>
+
         <Section>
           <Educations />
           <Works />
         </Section>
+
         <Section>
           <Project />
         </Section>
+
         <Section>
           <Skills />
         </Section>
