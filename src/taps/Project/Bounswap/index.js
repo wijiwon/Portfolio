@@ -78,17 +78,17 @@ const index = () => {
                 진행 기간
               </div>
               <div className="text-start">
-                2023. 11. 01 ~ 2023. 12. 05 (약 6주){" "}
+                2023. 11. 01 ~ 2023. 12. 05 (약 6주)
               </div>
             </li>
             <li>
               <div className="text-start font-extrabold text-[23px] mt-3">
                 개발 인원 & 담당 업무
               </div>
-                <div className="text-start">5명 (contract 3명 / front 2명)</div>
-                <div className="text-start mt-1">
-                  frontend (개발 환경설정, 페이지 구현 및 배포)
-                </div>
+              <div className="text-start">5명 (contract 3명 / front 2명)</div>
+              <div className="text-start mt-1">
+                frontend (개발 환경설정, 페이지 구현 및 배포)
+              </div>
             </li>
 
             <li>

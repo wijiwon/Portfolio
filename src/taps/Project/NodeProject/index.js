@@ -2,16 +2,9 @@ import React from "react";
 import ImageContainer from "../../../components/Project/ImageContainer";
 import BounswapImgs from "../../../components/Project/ImageContainer/Bounswap";
 
-import { FaReact, FaCheck } from "react-icons/fa";
-import {
-  SiTypescript,
-  SiSolidity,
-  SiTailwindcss,
-  SiAmazons3,
-  SiFigma,
-  SiAmazonaws,
-  SiAmazonroute53,
-} from "react-icons/si";
+import { FaCheck, FaNodeJs, FaHtml5 } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiSocketdotio, SiMysql, SiAmazonaws, SiExpress } from "react-icons/si";
 
 const index = () => {
   return (
@@ -25,38 +18,37 @@ const index = () => {
           <ul className="w-full">
             <li className="flex items-center w-full mt-2">
               <div className="font-extrabold text-[20px] w-[25%] text-start">
-                Swap
+                게시글 페이지
               </div>
               <div className="w-[70%] text-start ">
-                플랫폼 내 예치된 토큰을 자유롭게 교환
+                작성된 게시글을 페이지네이션으로 확인. 게시글 상세에서 사진 및
+                본문 확인과 댓글 작성 가능.
               </div>
             </li>
             <li className="flex items-center w-full mt-2">
               <div className="font-extrabold text-[20px] w-[25%] text-start">
-                Liquidity
+                게임대기 페이지
               </div>
               <div className="w-[70%] text-start ">
-                사용자는 원하는 풀(Pool)에 자신이 가지고 있는 토큰을 페어로
-                자유롭게 예치 유동성 공급 비율에 따른 수익분배
+                접속 중인 유저 확인 가능. 실시간 채팅 기능 구현. 게임 대기중인
+                게임 방 접속 가능.
               </div>
             </li>
             <li className="flex items-center w-full mt-2">
               <div className="font-extrabold text-[20px] w-[25%] text-start">
-                Staking
+                게임 페이지
               </div>
               <div className="w-[70%] text-start ">
-                스테이킹 풀에 예치한 기간 & 토큰의 양에 비례하여 메인넷 코인을
-                보상으로 부여
+                유저마다 임의의 제시문 입력. canvas를 이용한 그림판으로 제시문
+                표현. 유저가 그린 그림이 어떤 제시문을 말하는지 유추하며 진행 후
+                게임결과에서 진행상황 확인.
               </div>
             </li>
             <li className="flex items-center w-full mt-2">
               <div className="font-extrabold text-[20px] w-[25%] text-start">
-                Governance
+                마이 페이지
               </div>
-              <div className="w-[70%] text-start ">
-                플랫폼에 기여하고 있는 유저들이 커뮤니티의 방향성에 대한 제안 및
-                투표로 의사를 표하고 결정을 내림
-              </div>
+              <div className="w-[70%] text-start ">개인 프로필 변경 가능</div>
             </li>
           </ul>
         </div>
@@ -69,8 +61,9 @@ const index = () => {
                 프로젝트 소개
               </div>
               <div className="text-start">
-                Uniswap의 분산형 자동화 마켓 메이커(AMM)를 기반으로 사용자에게
-                유동성과 다양한 수익창출의 기회를 제공하는 탈중앙화 거래소
+                게임에 참여중인 유저끼리 문제를 만들어 제시하고 랜덤으로 받은
+                제시어를 그림으로 표현하여 다른 유저가 그린 그림을 보고 제시어를
+                유추하는 게임
               </div>
             </li>
             <li>
@@ -78,17 +71,17 @@ const index = () => {
                 진행 기간
               </div>
               <div className="text-start">
-                2023. 11. 01 ~ 2023. 12. 05 (약 6주){" "}
+                2023. 06. 02 ~ 2023. 06. 26 (약 3주)
               </div>
             </li>
             <li>
               <div className="text-start font-extrabold text-[23px] mt-3">
                 개발 인원 & 담당 업무
               </div>
-                <div className="text-start">5명 (contract 3명 / front 2명)</div>
-                <div className="text-start mt-1">
-                  frontend (개발 환경설정, 페이지 구현 및 배포)
-                </div>
+              <div className="text-start">4명 (backend 4명 / frontend 4명)</div>
+              <div className="text-start mt-1">
+                frontend, backend (CSS 총괄, 그림판, 게임로직 담당)
+              </div>
             </li>
 
             <li>
@@ -96,14 +89,13 @@ const index = () => {
                 기술 스택
               </div>
               <div className="flex justify-around">
-                <FaReact size={35} />
-                <SiTypescript size={35} />
-                <SiSolidity size={35} />
-                <SiTailwindcss size={35} />
+                <FaHtml5 size={35} />
+                <IoLogoJavascript size={35} />
+                <FaNodeJs size={35} />
+                <SiExpress size={35} />
+                <SiSocketdotio size={35} />
+                <SiMysql size={35} />
                 <SiAmazonaws size={35} />
-                <SiAmazons3 size={35} />
-                <SiAmazonroute53 size={35} />
-                <SiFigma size={35} />
               </div>
             </li>
           </ul>
@@ -121,8 +113,8 @@ const index = () => {
                       <FaCheck size={20} style={{ color: "60a5fa" }} />
                     </div>
                     <div className="w-[90%] text-start">
-                      각 탭의 DashBoard, Tokens&Pools&Stake detail 페이지,
-                      Governance 페이지 반응형 UI 구현
+                      canvas를 이용한 그림판 제작 및 captureStream과
+                      MediaRecorder을 이용한 그림 녹화 구현
                     </div>
                   </li>
                   <li className="flex w-full mt-3 items-center">
@@ -130,29 +122,21 @@ const index = () => {
                       <FaCheck size={20} style={{ color: "60a5fa" }} />
                     </div>
                     <div className="w-[90%] text-start">
-                      Tailwind를 활용한 페이지 구현: tailwind를 활용하여
-                      컴포넌트 디자인 구현, dark 모드와 @media, hover 등의
-                      기능을 활용한 반응형 앱웹 구현
+                      녹화된 미디어 데이터를 Blob객체로 DB에 저장
                     </div>
                   </li>
                   <li className="flex w-full mt-3 items-center">
                     <div className="w-[10%] flex justify-center">
                       <FaCheck size={20} style={{ color: "60a5fa" }} />
                     </div>
-                    <div className="w-[90%] text-start">
-                      React-query를 이용한 데이터 비동기 처리: react-query를
-                      사용하여 비동기적으로 데이터를 동기화하고 업데이트를 시켜
-                      dex 환경에 맞도록 포커싱될 때마다 데이터를 업데이트 할 수
-                      있도록 구현
-                    </div>
+                    <div className="w-[90%] text-start">게임 로직 구현</div>
                   </li>
                   <li className="flex w-full mt-3 items-center">
                     <div className="w-[10%] flex justify-center">
                       <FaCheck size={20} style={{ color: "60a5fa" }} />
                     </div>
                     <div className="w-[90%] text-start">
-                      AWS S3를 이용한 정적 배포: aws에서 s3, cloudFront를
-                      이용하여 정적으로 빌드파일 배포
+                      포토샵을 활용한 CSS 작업
                     </div>
                   </li>
                 </ul>

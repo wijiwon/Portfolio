@@ -3,7 +3,7 @@ import ImageContainer from "../../../components/Project/ImageContainer";
 import BounswapImgs from "../../../components/Project/ImageContainer/Bounswap";
 
 import { FaReact, FaCheck, FaNodeJs } from "react-icons/fa";
-import { SiAmazonaws, SiReactquery, SiMysql } from "react-icons/si";
+import { SiAmazonaws, SiReactquery, SiMysql, SiExpress } from "react-icons/si";
 
 const index = () => {
   return (
@@ -93,6 +93,7 @@ const index = () => {
                 <FaReact size={35} />
                 <SiReactquery size={35} />
                 <FaNodeJs size={35} />
+                <SiExpress size={35} />
                 <SiMysql size={35} />
                 <SiAmazonaws size={35} />
               </div>
