@@ -107,7 +107,7 @@ const index = () => {
                       <FaPencilAlt size={12} style={{ color: "60a5fa" }} />
                     </div>{" "}
                     <p className="mobile:w-[90%] ml-2 text-start">
-                      코드의 안정성을 위해 interface로 객체의 구조를
+                      코드의 안정성을 위해 Interface로 객체의 구조를
                       정의하였습니다.
                     </p>
                   </li>
@@ -147,7 +147,7 @@ const index = () => {
                       <FaPencilAlt size={12} style={{ color: "60a5fa" }} />
                     </div>
                     <p className="mobile:w-[90%] ml-2 text-start">
-                      ERC20을 기반으로 한 스마트계약 코드를 구현하였으며 remix를
+                      ERC20을 기반으로 한 스마트계약 코드를 구현하였으며 Remix를
                       이용한 트랙잭션을 배포하였습니다.
                     </p>
                   </li>
@@ -207,7 +207,7 @@ const index = () => {
                       <FaPencilAlt size={12} style={{ color: "60a5fa" }} />
                     </div>
                     <p className="mobile:w-[90%] ml-2 text-start">
-                      재사용성을 고려하여 컴포넌트 구성하려고 노력하고 있습니다.
+                      재사용성을 고려하여 컴포넌트 구성을 하려고 노력합니다.
                     </p>
                   </li>
                   <li className="flex w-full">
@@ -218,7 +218,7 @@ const index = () => {
                       <FaPencilAlt size={12} style={{ color: "60a5fa" }} />
                     </div>
                     <p className="mobile:w-[90%] ml-2 text-start">
-                      redux를 이용한 간단한 전역 상태관리 경험이 있습니다.
+                      Redux를 이용한 간단한 전역 상태관리 경험이 있습니다.
                     </p>
                   </li>
                 </ul>

@@ -61,7 +61,7 @@ const index = () => {
                 프로젝트 소개
               </div>
               <div className="text-start mobile:text-[12px]">
-                게임에 참여중인 유저끼리 문제를 만들어 제시하고 랜덤으로 받은
+                게임에 참여 중인 유저끼리 문제를 만들어 제시하고 랜덤으로 받은
                 제시어를 그림으로 표현하여 다른 유저가 그린 그림을 보고 제시어를
                 유추하는 게임
               </div>
@@ -121,7 +121,7 @@ const index = () => {
                       <FaCheck size={12} style={{ color: "60a5fa" }} />
                     </div>
                     <div className="w-[90%] mobile:w-full text-start">
-                      canvas를 이용한 그림판 제작 및 captureStream과
+                      Canvas를 이용한 그림판 제작 및 CaptureStream과
                       MediaRecorder을 이용한 그림 녹화 구현
                     </div>
                   </li>

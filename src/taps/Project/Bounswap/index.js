@@ -144,7 +144,7 @@ const index = () => {
                       <span className="mobile:hidden">
                         Tailwind를 활용한 페이지 구현:
                       </span>
-                      tailwind를 활용하여 컴포넌트 디자인 구현, dark 모드와
+                      Tailwind를 활용하여 컴포넌트 디자인 구현, dark 모드와
                       @media, hover 등의 기능을 활용한 반응형 앱웹 구현
                     </div>
                   </li>
@@ -159,8 +159,8 @@ const index = () => {
                       <span className="mobile:hidden">
                         React-query를 이용한 데이터 비동기 처리:
                       </span>
-                      react-query를 사용하여 비동기적으로 데이터를 동기화하고
-                      업데이트를 시켜 dex 환경에 맞도록 포커싱될 때마다 데이터를
+                      React-query를 사용하여 비동기적으로 데이터를 동기화하고
+                      업데이트를 시켜 Dex 환경에 맞도록 포커싱될 때마다 데이터를
                       업데이트 할 수 있도록 구현
                     </div>
                   </li>
@@ -175,7 +175,7 @@ const index = () => {
                       <span className="mobile:hidden">
                         AWS S3를 이용한 정적 배포:
                       </span>
-                      aws에서 s3, cloudFront를 이용하여 정적으로 빌드파일 배포
+                      AWS에서 s3, CloudFront를 이용하여 정적으로 빌드파일 배포
                     </div>
                   </li>
                 </ul>

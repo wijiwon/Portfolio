@@ -133,7 +133,7 @@ const index = () => {
                       <FaCheck size={12} style={{ color: "60a5fa" }} />
                     </div>
                     <div className="w-[90%] mobile:w-full text-start">
-                      회원가입 시, kakaoMap API를 활용하여 사용자의 거주지
+                      회원가입 시, KakaoMap API를 활용하여 사용자의 거주지
                       입력과 multer를 활용해 사용자의 인감등의 증빙자료 첨부.
                       Mysql을 활용하여 DB에 회원의 정보 저장.
                     </div>
