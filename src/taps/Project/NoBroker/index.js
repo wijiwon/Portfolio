@@ -63,7 +63,7 @@ const index = () => {
               <div className="text-start font-extrabold text-[23px] mobile:text-[16px] mt-3">
                 프로젝트 소개
               </div>
-              <div className="text-start mobile:text-[14px]">
+              <div className="text-start mobile:text-[12px]">
                 매수인과 매도인이 중개사 없이 직접 매물을 거래할 수 있는 부동산
                 매매 사이트
               </div>
@@ -72,7 +72,7 @@ const index = () => {
               <div className="text-start font-extrabold text-[23px] mobile:text-[16px] mt-3">
                 진행 기간
               </div>
-              <div className="text-start mobile:text-[14px]">
+              <div className="text-start mobile:text-[12px]">
                 2023. 07. 28 ~ 2023. 08. 28 (약 4주)
               </div>
             </li>
@@ -80,11 +80,14 @@ const index = () => {
               <div className="text-start font-extrabold text-[23px] mobile:text-[16px] mt-3">
                 개발 인원 & 담당 업무
               </div>
-              <div className="text-start mobile:text-[14px]">
+              <div className="text-start mobile:hidden">
                 4명 (backend 4명 / frontend 4명)
               </div>
-              <div className="text-start mobile:text-[14px] mt-1">
+              <div className="text-start mobile:hidden">
                 frontend, backend (메인, 회원가입, 로그인 페이지 담당)
+              </div>
+              <div className="text-start pc:hidden text-[12px]">
+                4명 / frontend, backend (메인, 회원가입, 로그인 페이지 담당)
               </div>
             </li>
             <li className="mobile:hidden">
@@ -108,20 +111,26 @@ const index = () => {
               <div className="text-start font-extrabold text-[23px] mobile:text-[16px] mt-3">
                 주요 업무
               </div>
-              <div className="text-start mobile:text-[14px]">
+              <div className="text-start mobile:text-[12px]">
                 <ul>
-                  <li className="flex w-full mt-3 mobile:mt-2 items-center">
+                  <li className="flex w-full mt-3 mobile:mt-2 pc:items-center">
                     <div className="w-[10%] flex justify-center mobile:hidden">
                       <FaCheck size={20} style={{ color: "60a5fa" }} />
+                    </div>
+                    <div className="w-[10%] flex justify-center mt-1 pc:hidden">
+                      <FaCheck size={12} style={{ color: "60a5fa" }} />
                     </div>
                     <div className="w-[90%] mobile:w-full text-start">
                       NASA Worldwind API를 활용한 3D 지구 구현. 원하는 좌표에
                       핀을 찍어 매물이 위치한 나라를 표시
                     </div>
                   </li>
-                  <li className="flex w-full mt-3 mobile:mt-2 items-center">
+                  <li className="flex w-full mt-3 mobile:mt-2 pc:items-center">
                     <div className="w-[10%] flex justify-center mobile:hidden">
                       <FaCheck size={20} style={{ color: "60a5fa" }} />
+                    </div>
+                    <div className="w-[10%] flex justify-center mt-1 pc:hidden">
+                      <FaCheck size={12} style={{ color: "60a5fa" }} />
                     </div>
                     <div className="w-[90%] mobile:w-full text-start">
                       회원가입 시, kakaoMap API를 활용하여 사용자의 거주지
@@ -129,9 +138,12 @@ const index = () => {
                       Mysql을 활용하여 DB에 회원의 정보 저장.
                     </div>
                   </li>
-                  <li className="flex w-full mt-3 mobile:mt-2 items-center">
+                  <li className="flex w-full mt-3 mobile:mt-2 pc:items-center">
                     <div className="w-[10%] flex justify-center mobile:hidden">
                       <FaCheck size={20} style={{ color: "60a5fa" }} />
+                    </div>
+                    <div className="w-[10%] flex justify-center mt-1 pc:hidden">
+                      <FaCheck size={12} style={{ color: "60a5fa" }} />
                     </div>
                     <div className="w-[90%] mobile:w-full text-start">
                       jwt accessToken을 활용한 로그인 구현. jwt.verify를 활용한

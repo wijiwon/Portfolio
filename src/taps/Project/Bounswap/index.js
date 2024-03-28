@@ -68,7 +68,7 @@ const index = () => {
               <div className="text-start font-extrabold text-[23px] mobile:text-[16px] mt-3">
                 프로젝트 소개
               </div>
-              <div className="text-start mobile:text-[14px]">
+              <div className="text-start mobile:text-[12px]">
                 Uniswap의 분산형 자동화 마켓 메이커(AMM)를 기반으로 사용자에게
                 유동성과 다양한 수익창출의 기회를 제공하는 탈중앙화 거래소
               </div>
@@ -77,7 +77,7 @@ const index = () => {
               <div className="text-start font-extrabold text-[23px] mobile:text-[16px] mt-3">
                 진행 기간
               </div>
-              <div className="text-start mobile:text-[14px]">
+              <div className="text-start mobile:text-[12px]">
                 2023. 11. 01 ~ 2023. 12. 05 (약 6주)
               </div>
             </li>
@@ -85,11 +85,14 @@ const index = () => {
               <div className="text-start font-extrabold text-[23px] mobile:text-[16px] mt-3">
                 개발 인원 & 담당 업무
               </div>
-              <div className="text-start mobile:text-[14px]">
+              <div className="text-start mobile:hidden">
                 5명 (contract 3명 / front 2명)
               </div>
-              <div className="text-start mobile:text-[14px] mt-1">
+              <div className="text-start mobile:hidden">
                 frontend (개발 환경설정, 페이지 구현 및 배포)
+              </div>
+              <div className="text-start pc:hidden text-[12px]">
+                5명 / frontend (개발 환경설정, 페이지 구현 및 배포)
               </div>
             </li>
 
@@ -118,20 +121,26 @@ const index = () => {
               </div>
               <div className="text-start">
                 <ul>
-                  <li className="flex w-full mt-3 mobile:mt-2 items-center">
+                  <li className="flex w-full mt-3 mobile:mt-2 pc:items-center">
                     <div className="w-[10%] flex justify-center mobile:hidden">
                       <FaCheck size={20} style={{ color: "60a5fa" }} />
                     </div>
-                    <div className="w-[90%] mobile:w-full text-start mobile:text-[14px]">
+                    <div className="w-[10%] flex justify-center mt-1 pc:hidden">
+                      <FaCheck size={12} style={{ color: "60a5fa" }} />
+                    </div>
+                    <div className="w-[90%] mobile:w-full text-start mobile:text-[12px]">
                       각 탭의 DashBoard, Tokens & Pools & Stake detail 페이지,
                       Governance 페이지 반응형 UI 구현
                     </div>
                   </li>
-                  <li className="flex w-full mt-3 mobile:mt-2 items-center">
+                  <li className="flex w-full mt-3 mobile:mt-2 pc:items-center">
                     <div className="w-[10%] flex justify-center mobile:hidden">
                       <FaCheck size={20} style={{ color: "60a5fa" }} />
                     </div>
-                    <div className="w-[90%] mobile:w-full text-start mobile:text-[14px]">
+                    <div className="w-[10%] flex justify-center mt-1 pc:hidden">
+                      <FaCheck size={12} style={{ color: "60a5fa" }} />
+                    </div>
+                    <div className="w-[90%] mobile:w-full text-start mobile:text-[12px]">
                       <span className="mobile:hidden">
                         Tailwind를 활용한 페이지 구현:
                       </span>
@@ -139,11 +148,14 @@ const index = () => {
                       @media, hover 등의 기능을 활용한 반응형 앱웹 구현
                     </div>
                   </li>
-                  <li className="flex w-full mt-3 mobile:mt-2 items-center">
+                  <li className="flex w-full mt-3 mobile:mt-2 pc:items-center">
                     <div className="w-[10%] flex justify-center mobile:hidden">
                       <FaCheck size={20} style={{ color: "60a5fa" }} />
                     </div>
-                    <div className="w-[90%] mobile:w-full text-start mobile:text-[14px]">
+                    <div className="w-[10%] flex justify-center mt-1 pc:hidden">
+                      <FaCheck size={12} style={{ color: "60a5fa" }} />
+                    </div>
+                    <div className="w-[90%] mobile:w-full text-start mobile:text-[12px]">
                       <span className="mobile:hidden">
                         React-query를 이용한 데이터 비동기 처리:
                       </span>
@@ -152,11 +164,14 @@ const index = () => {
                       업데이트 할 수 있도록 구현
                     </div>
                   </li>
-                  <li className="flex w-full mt-3 mobile:mt-2 items-center">
+                  <li className="flex w-full mt-3 mobile:mt-2 pc:items-center">
                     <div className="w-[10%] flex justify-center mobile:hidden">
                       <FaCheck size={20} style={{ color: "60a5fa" }} />
                     </div>
-                    <div className="w-[90%] mobile:w-full text-start mobile:text-[14px]">
+                    <div className="w-[10%] flex justify-center mt-1 pc:hidden">
+                      <FaCheck size={12} style={{ color: "60a5fa" }} />
+                    </div>
+                    <div className="w-[90%] mobile:w-full text-start mobile:text-[12px]">
                       <span className="mobile:hidden">
                         AWS S3를 이용한 정적 배포:
                       </span>

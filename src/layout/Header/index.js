@@ -12,33 +12,33 @@ const index = ({ tap1, tap2, tap3, tap4 }) => {
       <div className="ml-[30px] font-extrabold hover:text-[#60a5fa] mobile:hidden">
         Wijiwon Portfolio
       </div>
-      <div className="flex pc:mr-[30px] mobile:text-[13px] mobile:w-full motion-safe:justify-around">
+      <div className="flex pc:mr-[30px] mobile:text-[12px] mobile:w-full mobile:justify-around">
         <a
-          className="mr-[20px] cursor-pointer hover:text-[#60a5fa]"
+          className="pc:mr-[20px] cursor-pointer hover:text-[#60a5fa]"
           href="#sectionOne"
         >
           About
         </a>
         <a
-          className="mr-[20px] cursor-pointer hover:text-[#60a5fa]"
+          className="pc:mr-[20px] cursor-pointer hover:text-[#60a5fa]"
           href="#sectionTwo"
         >
           Education
         </a>
         <a
-          className="mr-[20px] cursor-pointer hover:text-[#60a5fa]"
+          className="pc:mr-[20px] cursor-pointer hover:text-[#60a5fa]"
           href="#sectionTwo"
         >
           Work
         </a>
         <a
-          className="mr-[20px] cursor-pointer hover:text-[#60a5fa]"
+          className="pc:mr-[20px] cursor-pointer hover:text-[#60a5fa]"
           href="#sectionThree"
         >
           Project
         </a>
         <a className="cursor-pointer hover:text-[#60a5fa]" href="#sectionFour">
-          skill
+          Skill
         </a>
       </div>
     </div>
