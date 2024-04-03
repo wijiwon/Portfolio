@@ -274,7 +274,7 @@ const index = () => {
         </li>
         <li className="mt-3 pb-5 w-full border-b-2">
           <p className="w-full text-[30px] mobile:text-[16px] font-extrabold text-start">
-            Ect
+            Tools
           </p>
           <div className="flex flex-col justify-around w-full">
             <div className="flex justify-evenly items-center w-full  ">

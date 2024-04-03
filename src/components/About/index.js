@@ -28,7 +28,7 @@ const index = () => {
           <p>"</p>
         </div>
         <div className=" text-right text-[20px] mobile:text-[15px]">
-          <p>1998. 02. 14</p>
+          <p>1998. 02. 14(만 26세)</p>
           <p>dnlwldnjs5@gmail.com</p>
         </div>
         <div className="w-full mt-14 flex justify-end">
