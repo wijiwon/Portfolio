@@ -9,7 +9,7 @@ import { SiSocketdotio, SiMysql, SiAmazonaws, SiExpress } from "react-icons/si";
 
 const index = (props) => {
   return (
-    <div className="flex">
+    <div className="flex bg-white rounded-3xl border-8 mobile:border-5 border-[#60a5fa]">
       <div className="flex flex-col items-center justify-evenly">
         <ProjectTitle
           num="03"
@@ -18,7 +18,7 @@ const index = (props) => {
         />
         <div className="flex mobile:flex-col ">
           <div className="w-full flex flex-col items-center justify-center">
-            <div className="w-full">
+            <div className="w-full mobile:mt-4">
               <ImageContainer Imgs={NodeProjectImgs} />
               <div className="pc:pl-9 w-full mobile:flex mobile:justify-center text-gray-600">
                 <div className="text-start font-bold text-[17px] mobile:text-[12px] pc:mt-3">

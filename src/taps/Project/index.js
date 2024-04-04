@@ -11,16 +11,6 @@ import "swiper/css/pagination";
 
 const index = () => {
   return (
-    // <div className="w-full h-full ">
-    //   <ul className="w-full h-full relative">
-    //     <li className="absolute top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2 border-8 w-[85%] h-[80%] border-blue-400 rounded-3xl">
-    //       <Bounswap />
-    //     </li>
-    //     <li className="absolute top-[50%] left-[95%] -translate-y-1/2 border-8 w-[85%] h-[70%] opacity-50 border-blue-400 rounded-3xl">
-    //       <Nobroker />
-    //     </li>
-    //   </ul>
-    // </div>
     <div className="flex items-center justify-center w-full h-full">
       <Swiper
         effect="coverflow"
@@ -42,8 +32,6 @@ const index = () => {
           style={{
             width: "85%",
             height: "80%",
-            border: "10px solid",
-            borderColor: "#60a5fa",
             borderRadius: "24px",
           }}
         >
@@ -53,8 +41,6 @@ const index = () => {
           style={{
             width: "85%",
             height: "80%",
-            border: "10px solid",
-            borderColor: "#60a5fa",
             borderRadius: "24px",
           }}
         >
@@ -64,8 +50,6 @@ const index = () => {
           style={{
             width: "85%",
             height: "80%",
-            border: "10px solid",
-            borderColor: "#60a5fa",
             borderRadius: "24px",
           }}
         >
