@@ -1,7 +1,7 @@
 import React from "react";
-import ImageContainer from "../../../components/Project/ImageContainer";
-import BounswapImgs from "../../../components/Project/ImageContainer/Bounswap";
-
+import ImageContainer from "../../../components/Project/ImageContainer/Bounswap";
+import BounswapImgs from "../../../components/Project/ImageContainer/Bounswap/Images";
+import ProjectTitle from "../../../components/ProjectTitle";
 import { FaReact, FaCheck } from "react-icons/fa";
 import {
   SiTypescript,
@@ -13,175 +13,196 @@ import {
   SiAmazonroute53,
 } from "react-icons/si";
 
-const index = () => {
+const index = (props) => {
   return (
-    <div className="flex flex-col mx-[30px]">
-      <div className="flex mobile:flex-col w-full">
-        <div className="w-full pc:p-5 mobile:mt-5">
-          <ImageContainer Imgs={BounswapImgs} />
-        </div>
-        <div className="w-full mobile:hidden">
-          <p className="p-5 text-[30px] font-extrabold">페이지 소개</p>
-          <ul className="w-full">
-            <li className="flex items-center w-full mt-2">
-              <div className="font-extrabold text-[20px] w-[25%] text-start">
-                Swap
+    <div className="flex bg-white rounded-3xl">
+      <div className="flex flex-col items-center justify-evenly">
+        <ProjectTitle
+          num="01"
+          title="Bounswap"
+          name="Bounswap"
+          git="https://github.com/wijiwon/Bounswap_Front"
+          site="https://www.bounswap.site/"
+        />
+        <div className="flex mobile:flex-col ">
+          <div className="w-full flex flex-col items-center justify-center">
+            <div className="w-full">
+              <ImageContainer Imgs={BounswapImgs} />
+              <div className="pc:pl-9 w-full mobile:flex mobile:justify-center text-gray-600">
+                <div className="text-start font-bold text-[17px] mobile:text-[12px] pc:mt-3">
+                  진행 기간.
+                  <span className="text-start font-light text-[13px] mobile:text-[10px] ml-2">
+                    2023. 11. 01 ~ 2023. 12. 05 (약 6주)
+                  </span>
+                </div>
               </div>
-              <div className="w-[70%] text-start ">
-                플랫폼 내 예치된 토큰을 자유롭게 교환
-              </div>
-            </li>
-            <li className="flex items-center w-full mt-2">
-              <div className="font-extrabold text-[20px] w-[25%] text-start">
-                Liquidity
-              </div>
-              <div className="w-[70%] text-start ">
-                사용자는 원하는 풀(Pool)에 자신이 가지고 있는 토큰을 페어로
-                자유롭게 예치 유동성 공급 비율에 따른 수익분배
-              </div>
-            </li>
-            <li className="flex items-center w-full mt-2">
-              <div className="font-extrabold text-[20px] w-[25%] text-start">
-                Staking
-              </div>
-              <div className="w-[70%] text-start ">
-                스테이킹 풀에 예치한 기간 & 토큰의 양에 비례하여 메인넷 코인을
-                보상으로 부여
-              </div>
-            </li>
-            <li className="flex items-center w-full mt-2">
-              <div className="font-extrabold text-[20px] w-[25%] text-start">
-                Governance
-              </div>
-              <div className="w-[70%] text-start ">
-                플랫폼에 기여하고 있는 유저들이 커뮤니티의 방향성에 대한 제안 및
-                투표로 의사를 표하고 결정을 내림
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="flex mobile:flex-col">
-        <div className="w-full pc:px-5">
-          <ul>
-            <li>
-              <div className="text-start font-extrabold text-[23px] mobile:text-[16px] mt-3">
-                프로젝트 소개
-              </div>
-              <div className="text-start mobile:text-[12px]">
-                Uniswap의 분산형 자동화 마켓 메이커(AMM)를 기반으로 사용자에게
-                유동성과 다양한 수익창출의 기회를 제공하는 탈중앙화 거래소
-              </div>
-            </li>
-            <li>
-              <div className="text-start font-extrabold text-[23px] mobile:text-[16px] mt-3">
-                진행 기간
-              </div>
-              <div className="text-start mobile:text-[12px]">
-                2023. 11. 01 ~ 2023. 12. 05 (약 6주)
-              </div>
-            </li>
-            <li>
-              <div className="text-start font-extrabold text-[23px] mobile:text-[16px] mt-3">
-                개발 인원 & 담당 업무
-              </div>
-              <div className="text-start mobile:hidden">
-                5명 (contract 3명 / front 2명)
-              </div>
-              <div className="text-start mobile:hidden">
-                frontend (개발 환경설정, 페이지 구현 및 배포)
-              </div>
-              <div className="text-start pc:hidden text-[12px]">
-                5명 / frontend (개발 환경설정, 페이지 구현 및 배포)
-              </div>
-            </li>
+            </div>
+          </div>
+          <div className="w-full p-2 flex flex-col justify-center">
+            <ul>
+              <li>
+                <div className="text-start font-extrabold text-[20px] mobile:text-[14px] mt-1">
+                  프로젝트 소개
+                </div>
+                <div className="text-start text-[15px] mobile:text-[10px] mt-1">
+                  Uniswap의 분산형 자동화 마켓 메이커(AMM)를 기반으로 사용자에게
+                  유동성과 다양한 수익창출의 기회를 제공하는 탈중앙화 거래소
+                </div>
+              </li>
+              <li className="mobile:hidden">
+                <div className="text-start font-extrabold text-[20px] mt-3">
+                  개발 인원
+                </div>
+                <div className="text-[15px] text-start mt-1">
+                  5명 (contract 3명 / front 2명)
+                </div>
+              </li>
 
-            <li className="mobile:hidden">
-              <div className="text-start font-extrabold text-[23px] mt-3">
-                기술 스택
-              </div>
-              <div className="flex justify-around">
-                <FaReact size={35} />
-                <SiTypescript size={35} />
-                <SiSolidity size={35} />
-                <SiTailwindcss size={35} />
-                <SiAmazonaws size={35} />
-                <SiAmazons3 size={35} />
-                <SiAmazonroute53 size={35} />
-                <SiFigma size={35} />
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div className="w-full pr-5">
-          <ul>
-            <li>
-              <div className="text-start font-extrabold text-[23px] mobile:text-[16px] mt-3">
-                주요 업무
-              </div>
-              <div className="text-start">
-                <ul>
-                  <li className="flex w-full mt-3 mobile:mt-2 pc:items-center">
-                    <div className="w-[10%] flex justify-center mobile:hidden">
-                      <FaCheck size={20} style={{ color: "60a5fa" }} />
-                    </div>
-                    <div className="w-[10%] flex justify-center mt-1 pc:hidden">
-                      <FaCheck size={12} style={{ color: "60a5fa" }} />
-                    </div>
-                    <div className="w-[90%] mobile:w-full text-start mobile:text-[12px]">
-                      각 탭의 DashBoard, Tokens & Pools & Stake detail 페이지,
-                      Governance 페이지 반응형 UI 구현
-                    </div>
-                  </li>
-                  <li className="flex w-full mt-3 mobile:mt-2 pc:items-center">
-                    <div className="w-[10%] flex justify-center mobile:hidden">
-                      <FaCheck size={20} style={{ color: "60a5fa" }} />
-                    </div>
-                    <div className="w-[10%] flex justify-center mt-1 pc:hidden">
-                      <FaCheck size={12} style={{ color: "60a5fa" }} />
-                    </div>
-                    <div className="w-[90%] mobile:w-full text-start mobile:text-[12px]">
-                      <span className="mobile:hidden">
-                        Tailwind를 활용한 페이지 구현:
-                      </span>
-                      Tailwind를 활용하여 컴포넌트 디자인 구현, dark 모드와
-                      @media, hover 등의 기능을 활용한 반응형 앱웹 구현
-                    </div>
-                  </li>
-                  <li className="flex w-full mt-3 mobile:mt-2 pc:items-center">
-                    <div className="w-[10%] flex justify-center mobile:hidden">
-                      <FaCheck size={20} style={{ color: "60a5fa" }} />
-                    </div>
-                    <div className="w-[10%] flex justify-center mt-1 pc:hidden">
-                      <FaCheck size={12} style={{ color: "60a5fa" }} />
-                    </div>
-                    <div className="w-[90%] mobile:w-full text-start mobile:text-[12px]">
-                      <span className="mobile:hidden">
-                        React-query를 이용한 데이터 비동기 처리:
-                      </span>
-                      React-query를 사용하여 비동기적으로 데이터를 동기화하고
-                      업데이트를 시켜 Dex 환경에 맞도록 포커싱될 때마다 데이터를
-                      업데이트 할 수 있도록 구현
-                    </div>
-                  </li>
-                  <li className="flex w-full mt-3 mobile:mt-2 pc:items-center">
-                    <div className="w-[10%] flex justify-center mobile:hidden">
-                      <FaCheck size={20} style={{ color: "60a5fa" }} />
-                    </div>
-                    <div className="w-[10%] flex justify-center mt-1 pc:hidden">
-                      <FaCheck size={12} style={{ color: "60a5fa" }} />
-                    </div>
-                    <div className="w-[90%] mobile:w-full text-start mobile:text-[12px]">
-                      <span className="mobile:hidden">
-                        AWS S3를 이용한 정적 배포:
-                      </span>
-                      AWS에서 s3, CloudFront를 이용하여 정적으로 빌드파일 배포
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+              <li>
+                <div className="text-start font-extrabold text-[20px] mobile:text-[14px] mt-3">
+                  담당 업무
+                </div>
+                <div className="text-start">
+                  <ul>
+                    <li className="flex w-full mt-1">
+                      <div className="flex mt-1 mr-2 mobile:hidden">
+                        <FaCheck size={15} style={{ color: "60a5fa" }} />
+                      </div>
+                      <div className="flex mr-2 mt-1 pc:hidden">
+                        <FaCheck size={12} style={{ color: "60a5fa" }} />
+                      </div>
+                      <div className="text-[15px] w-[90%] mobile:w-full text-start mobile:text-[10px]">
+                        각 탭의 DashBoard, Tokens & Pools & Stake detail 페이지,
+                        Governance 페이지 반응형 UI 구현
+                      </div>
+                    </li>
+                    <li className="flex w-full mt-1">
+                      <div className="flex mt-1 mr-2 mobile:hidden">
+                        <FaCheck size={15} style={{ color: "60a5fa" }} />
+                      </div>
+                      <div className="flex mr-2 mt-1 pc:hidden">
+                        <FaCheck size={12} style={{ color: "60a5fa" }} />
+                      </div>
+                      <div className="w-[90%] mobile:w-full text-start text-[15px] mobile:text-[10px]">
+                        Tailwindcss를 활용하여 컴포넌트 UI, dark 모드, @media,
+                        hover 등의 기능을 활용한 반응형 앱웹 구현
+                      </div>
+                    </li>
+                    <li className="flex w-full mt-1">
+                      <div className="flex mt-1 mr-2 mobile:hidden">
+                        <FaCheck size={15} style={{ color: "60a5fa" }} />
+                      </div>
+                      <div className="flex mr-2 mt-1 pc:hidden">
+                        <FaCheck size={12} style={{ color: "60a5fa" }} />
+                      </div>
+                      <div className="w-[90%] mobile:w-full text-start text-[15px] mobile:text-[10px]">
+                        React-query를 사용하여 비동기적으로 데이터를 동기화하고
+                        업데이트를 시켜 Dex 환경에 맞도록 포커싱될 때마다
+                        데이터를 업데이트 할 수 있도록 구현
+                      </div>
+                    </li>
+                    <li className="flex w-full mt-1">
+                      <div className="flex mt-1 mr-2 mobile:hidden">
+                        <FaCheck size={15} style={{ color: "60a5fa" }} />
+                      </div>
+                      <div className="flex mr-2 mt-1 pc:hidden">
+                        <FaCheck size={12} style={{ color: "60a5fa" }} />
+                      </div>
+                      <div className="w-[90%] mobile:w-full text-start text-[15px] mobile:text-[10px]">
+                        보일러 플레이트를 최소화하고자 반복적으로 사용되는
+                        함수나 컨트랙트 코드를 features 디렉토리에 모듈화{" "}
+                      </div>
+                    </li>{" "}
+                    <li className="flex w-full mt-1">
+                      <div className="flex mt-1 mr-2 mobile:hidden">
+                        <FaCheck size={15} style={{ color: "60a5fa" }} />
+                      </div>
+                      <div className="flex mr-2 mt-1 pc:hidden">
+                        <FaCheck size={12} style={{ color: "60a5fa" }} />
+                      </div>
+                      <div className="w-[90%] mobile:w-full text-start text-[15px] mobile:text-[10px]">
+                        Typescript 환경 설정, 인터페이스 설정으로 코드 안정성
+                        향상
+                      </div>
+                    </li>
+                    <li className="flex w-full mt-1">
+                      <div className="flex mt-1 mr-2 mobile:hidden">
+                        <FaCheck size={15} style={{ color: "60a5fa" }} />
+                      </div>
+                      <div className="flex mr-2 mt-1 pc:hidden">
+                        <FaCheck size={12} style={{ color: "60a5fa" }} />
+                      </div>
+                      <div className="w-[90%] mobile:w-full text-start text-[15px] mobile:text-[10px]">
+                        web3 라이브러리와 Metamask를 이용한 스마트 컨트랙트 연동
+                      </div>
+                    </li>
+                    <li className="flex w-full mt-1">
+                      <div className="flex mt-1 mr-2 mobile:hidden">
+                        <FaCheck size={15} style={{ color: "60a5fa" }} />
+                      </div>
+                      <div className="flex mr-2 mt-1 pc:hidden">
+                        <FaCheck size={12} style={{ color: "60a5fa" }} />
+                      </div>
+                      <div className="w-[90%] mobile:w-full text-start text-[15px] mobile:text-[10px]">
+                        AWS에서 s3, CloudFront를 이용하여 정적으로 빌드파일 배포
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li className="mobile:hidden">
+                <div className="text-start font-extrabold text-[23px] mt-3">
+                  기술 스택
+                </div>
+                <div className="flex justify-around mt-1">
+                  <div className="flex flex-col items-center">
+                    <FaReact size={35} />
+                    <p className="text-[12px] font-bold">React</p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiTypescript size={35} />
+                    <p className="text-[12px] font-bold">Typescript</p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiSolidity size={35} />
+                    <p className="text-[12px] font-bold">Solidity</p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiTailwindcss size={35} />
+                    <p className="text-[12px] font-bold">
+                      Tailwind
+                      <br />
+                      css
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiAmazonaws size={35} />
+                    <p className="text-[12px] font-bold">AWS</p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiAmazons3 size={35} />
+                    <p className="text-[12px] font-bold">
+                      AWS
+                      <br />
+                      S3
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiAmazonroute53 size={35} />
+                    <p className="text-[12px] font-bold">
+                      AWS
+                      <br />
+                      Route53
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiFigma size={35} />
+                    <p className="text-[12px] font-bold">Figma</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

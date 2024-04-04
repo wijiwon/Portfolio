@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import BounswapWidget from "../Widget/Bounswap";
 
 const ImageContainer = ({ Imgs }) => {
   const [imgIndex, setImgIndex] = useState(1);
@@ -21,6 +22,14 @@ const ImageContainer = ({ Imgs }) => {
     setApplyTransition(true);
     setImgIndex(imgIndex + 1);
     setImgPosition(ImgPosition - 100);
+  };
+
+  const widgetClick = (e) => {
+    const imags = Array.from(e.target.parentNode.children);
+    const _index = imags.indexOf(e.target) + 1;
+    setApplyTransition(true);
+    setImgIndex(_index);
+    setImgPosition(_index * -100);
   };
 
   useEffect(() => {
@@ -51,24 +60,29 @@ const ImageContainer = ({ Imgs }) => {
   }, [imgIndex, ImgPosition, imglength, applyTransition]);
 
   return (
-    <div className="relative w-full pc:h-[300px] mobile:h-[180px] overflow-hidden">
-      <div ref={containerRef} className="image-container absolute flex ">
-        <Imgs />
+    <div className="flex flex-col items-center r">
+      <div className="w-full flex flex-row items-center">
+        <div className="z-10">
+          <IoIosArrowBack
+            size={35}
+            style={{ color: "60a5fa", cursor: "pointer" }}
+            onClick={_Prev}
+          />
+        </div>
+        <div className="w-full overflow-hidden">
+          <div ref={containerRef} className="image-container flex ">
+            <Imgs />
+          </div>
+        </div>
+        <div className="z-10 ">
+          <IoIosArrowForward
+            size={35}
+            style={{ color: "60a5fa", cursor: "pointer" }}
+            onClick={_Next}
+          />
+        </div>
       </div>
-      <div className="absolute top-1/2 left-3 z-10 mobile:border-2 mobile:rounded-full mobile:border-[#60a5fa]">
-        <IoIosArrowBack
-          size={30}
-          style={{ color: "60a5fa", cursor: "pointer" }}
-          onClick={_Prev}
-        />
-      </div>
-      <div className="absolute top-1/2 right-3 z-10 mobile:border-2 mobile:rounded-full mobile:border-[#60a5fa]">
-        <IoIosArrowForward
-          size={30}
-          style={{ color: "60a5fa", cursor: "pointer" }}
-          onClick={_Next}
-        />
-      </div>
+      <BounswapWidget click={widgetClick} />
     </div>
   );
 };

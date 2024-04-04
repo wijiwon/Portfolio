@@ -16,7 +16,9 @@ const index = () => {
           </div>
           <div className="text-[18px] mobile:text-[15px] w-[70%] text-left">
             늘푸른메디컬
-            <span className="text-[14px] ml-[5px]">(대리/온라인MD)</span>
+            <span className="text-[14px] ml-[5px]">
+              (대리/온라인MD) (비개발)
+            </span>
           </div>
         </li>
       </ul>

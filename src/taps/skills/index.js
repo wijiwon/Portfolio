@@ -13,6 +13,7 @@ import {
 } from "react-icons/si";
 
 const index = () => {
+  //! 전체 컨테이너 중앙정렬해서 화면 넓어도 어색해보이지 않게 하자!
   return (
     <>
       <MainTitle title="Skill" />

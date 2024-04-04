@@ -1,92 +1,79 @@
-import React, { useEffect, useState } from "react";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import ProjectTitle from "../../components/ProjectTitle";
+import React from "react";
 import Bounswap from "./Bounswap";
-import NoBroker from "./NoBroker";
+import Nobroker from "./Nobroker";
 import NodeProject from "./NodeProject";
 
-const Index = () => {
-  const [index, setIndex] = useState(1);
-  const [position, setPosition] = useState(0);
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 
-  const { length } = document.querySelectorAll(".swiper-item");
-
-  const Prev = () => {
-    if (index === 1) {
-      setPosition(-100 * (length - 1));
-      setIndex(length);
-    } else {
-      setPosition(position - -100);
-      setIndex(index - 1);
-    }
-  };
-
-  const Next = () => {
-    if (index === length) {
-      setPosition(0);
-      setIndex(1);
-    } else {
-      setPosition(position - 100);
-      setIndex(index + 1);
-    }
-  };
-
-  useEffect(() => {
-    const container = document.querySelector(".swiper-container");
-
-    container.style.left = position + "%";
-    container.style.transition = "1s";
-  }, [index, position]);
-
+const index = () => {
   return (
-    <>
-      <div className="w-full h-full relative">
-        <ul className="swiper-container absolute w-full h-full flex">
-          <li className="swiper-item w-full h-full flex-shrink-0">
-            <ProjectTitle
-              title="Project 01. Bounswap"
-              name="Bounswap"
-              git="https://github.com/wijiwon/Bounswap_Front"
-              site="https://www.bounswap.site/"
-            />
-            <Bounswap />
-          </li>
-          <li className="swiper-item w-full h-full flex-shrink-0">
-            <ProjectTitle
-              title="Project 02. NoBroker"
-              name="NoBroker"
-              git="https://github.com/wijiwon/NoBroker"
-              site="http://3.37.244.154"
-            />
-            <NoBroker />
-          </li>
-          <li className="swiper-item w-full h-full flex-shrink-0">
-            <ProjectTitle
-              title="Project 03. 그림 일심 동체"
-              git="https://github.com/wijiwon/Monami"
-            />
-            <NodeProject />
-          </li>
-        </ul>
-        <div className="absolute w-full h-full">
-          <div className="absolute top-1/2 translate-y-1/2 left-10 mobile:left-5">
-            <IoIosArrowBack
-              size={60}
-              style={{ color: "60a5fa", cursor: "pointer" }}
-              onClick={Prev}
-            />
-          </div>
-          <div className="absolute top-1/2 translate-y-1/2 right-10 mobile:right-5">
-            <IoIosArrowForward
-              size={60}
-              style={{ color: "60a5fa", cursor: "pointer" }}
-              onClick={Next}
-            />
-          </div>
-        </div>
-      </div>
-    </>
+    // <div className="w-full h-full ">
+    //   <ul className="w-full h-full relative">
+    //     <li className="absolute top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2 border-8 w-[85%] h-[80%] border-blue-400 rounded-3xl">
+    //       <Bounswap />
+    //     </li>
+    //     <li className="absolute top-[50%] left-[95%] -translate-y-1/2 border-8 w-[85%] h-[70%] opacity-50 border-blue-400 rounded-3xl">
+    //       <Nobroker />
+    //     </li>
+    //   </ul>
+    // </div>
+    <div className="flex items-center justify-center w-full h-full">
+      <Swiper
+        effect="coverflow"
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        spaceBetween={30}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: -50,
+          depth: 30,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        modules={[EffectCoverflow, Pagination]}
+        className="swiper"
+      >
+        <SwiperSlide
+          style={{
+            width: "85%",
+            height: "80%",
+            border: "10px solid",
+            borderColor: "#60a5fa",
+            borderRadius: "24px",
+          }}
+        >
+          <Bounswap />
+        </SwiperSlide>
+        <SwiperSlide
+          style={{
+            width: "85%",
+            height: "80%",
+            border: "10px solid",
+            borderColor: "#60a5fa",
+            borderRadius: "24px",
+          }}
+        >
+          <Nobroker />
+        </SwiperSlide>
+        <SwiperSlide
+          style={{
+            width: "85%",
+            height: "80%",
+            border: "10px solid",
+            borderColor: "#60a5fa",
+            borderRadius: "24px",
+          }}
+        >
+          <NodeProject />
+        </SwiperSlide>
+      </Swiper>
+    </div>
   );
 };
 
-export default Index;
+export default index;
