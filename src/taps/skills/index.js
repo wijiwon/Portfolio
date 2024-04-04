@@ -228,7 +228,7 @@ const index = () => {
                     <ul className="ml-3 text-start list-disc text-[14px] mobile:text-[10px] mb-2">
                       <li>
                         <a
-                          className="underline"
+                          className="underline hover:text-[#60a5fa]"
                           href="https://www.figma.com/file/wNfpGuAJAjqdQTW2RwQIKa/pool-%26-token_detail-%2F-stake?type=design&node-id=0%3A1&mode=design&t=ML6dEpORMCavsxjQ-1"
                         >
                           사이트의 UI/UX 디자인을 한 경험이 있습니다.(Bounswap)
