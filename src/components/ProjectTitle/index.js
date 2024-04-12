@@ -16,7 +16,8 @@ const index = (props) => {
       <div className="flex items-end mobile:text-[12px] mobile:w-full mobile:justify-end">
         <div className="flex">
           <div
-            className="flex items-center cursor-pointer z-10 hover:text-[#60a5fa]"
+            // ! 여기
+            className="flex items-center cursor-pointer z-10 hover:text-[#60a5fa] hover:animate-none animate-[linkBounce_2s_ease_infinite]"
             onClick={() => {
               window.open(props.git, "_blank");
             }}
@@ -30,7 +31,7 @@ const index = (props) => {
           </div>
           {props.name && (
             <div
-              className="flex items-center ml-5 cursor-pointer z-10 hover:text-[#60a5fa]"
+              className="flex items-center ml-5 cursor-pointer z-10 hover:text-[#60a5fa] hover:animate-none animate-[linkBounce_2s_ease_infinite]"
               onClick={() => {
                 window.open(props.site, "_blank");
               }}

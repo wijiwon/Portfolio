@@ -13,7 +13,6 @@ const index = (props) => {
           num="02"
           title="Nobroker"
           name="Nobroker"
-          // ! 주소 이동 제대로 안됨 체크
           git="https://github.com/wijiwon/NoBroker"
           site="http://3.37.244.154"
         />
@@ -50,7 +49,37 @@ const index = (props) => {
                   4명 (backend 4명 / frontend 4명)
                 </div>
               </li>
-
+              <li className="mobile:hidden">
+                <div className="text-start font-extrabold text-[23px] mt-3">
+                  기술 스택
+                </div>
+                <div className="flex justify-around mt-1">
+                  <div className="flex flex-col items-center">
+                    <FaReact size={35} />
+                    <p className="text-[12px] font-bold">React</p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiReactquery size={35} />
+                    <p className="text-[12px] font-bold">Reactquery</p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <FaNodeJs size={35} />
+                    <p className="text-[12px] font-bold">Node.js</p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiExpress size={35} />
+                    <p className="text-[12px] font-bold">Express</p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiMysql size={35} />
+                    <p className="text-[12px] font-bold">MySQL</p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiAmazonaws size={35} />
+                    <p className="text-[12px] font-bold">AWS</p>
+                  </div>
+                </div>
+              </li>
               <li>
                 <div className="text-start font-extrabold text-[20px] mobile:text-[14px] mt-3">
                   담당 업무
@@ -130,37 +159,7 @@ const index = (props) => {
                   </ul>
                 </div>
               </li>
-              <li className="mobile:hidden">
-                <div className="text-start font-extrabold text-[23px] mt-3">
-                  기술 스택
-                </div>
-                <div className="flex justify-around mt-1">
-                  <div className="flex flex-col items-center">
-                    <FaReact size={35} />
-                    <p className="text-[12px] font-bold">React</p>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <SiReactquery size={35} />
-                    <p className="text-[12px] font-bold">Reactquery</p>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <FaNodeJs size={35} />
-                    <p className="text-[12px] font-bold">Node.js</p>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <SiExpress size={35} />
-                    <p className="text-[12px] font-bold">Express</p>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <SiMysql size={35} />
-                    <p className="text-[12px] font-bold">MySQL</p>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <SiAmazonaws size={35} />
-                    <p className="text-[12px] font-bold">AWS</p>
-                  </div>
-                </div>
-              </li>
+
             </ul>
           </div>
         </div>

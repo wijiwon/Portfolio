@@ -57,7 +57,57 @@ const index = (props) => {
                   5명 (contract 3명 / front 2명)
                 </div>
               </li>
-
+              <li className="mobile:hidden">
+                <div className="text-start font-extrabold text-[23px] mt-3">
+                  기술 스택
+                </div>
+                <div className="flex justify-around mt-1">
+                  <div className="flex flex-col items-center">
+                    <FaReact size={35} />
+                    <p className="text-[12px] font-bold">React</p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiTypescript size={35} />
+                    <p className="text-[12px] font-bold">Typescript</p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiSolidity size={35} />
+                    <p className="text-[12px] font-bold">Solidity</p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiTailwindcss size={35} />
+                    <p className="text-[12px] font-bold">
+                      Tailwind
+                      <br />
+                      css
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiAmazonaws size={35} />
+                    <p className="text-[12px] font-bold">AWS</p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiAmazons3 size={35} />
+                    <p className="text-[12px] font-bold">
+                      AWS
+                      <br />
+                      S3
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiAmazonroute53 size={35} />
+                    <p className="text-[12px] font-bold">
+                      AWS
+                      <br />
+                      Route53
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiFigma size={35} />
+                    <p className="text-[12px] font-bold">Figma</p>
+                  </div>
+                </div>
+              </li>
               <li>
                 <div className="text-start font-extrabold text-[20px] mobile:text-[14px] mt-3">
                   담당 업무
@@ -148,57 +198,6 @@ const index = (props) => {
                       </div>
                     </li>
                   </ul>
-                </div>
-              </li>
-              <li className="mobile:hidden">
-                <div className="text-start font-extrabold text-[23px] mt-3">
-                  기술 스택
-                </div>
-                <div className="flex justify-around mt-1">
-                  <div className="flex flex-col items-center">
-                    <FaReact size={35} />
-                    <p className="text-[12px] font-bold">React</p>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <SiTypescript size={35} />
-                    <p className="text-[12px] font-bold">Typescript</p>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <SiSolidity size={35} />
-                    <p className="text-[12px] font-bold">Solidity</p>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <SiTailwindcss size={35} />
-                    <p className="text-[12px] font-bold">
-                      Tailwind
-                      <br />
-                      css
-                    </p>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <SiAmazonaws size={35} />
-                    <p className="text-[12px] font-bold">AWS</p>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <SiAmazons3 size={35} />
-                    <p className="text-[12px] font-bold">
-                      AWS
-                      <br />
-                      S3
-                    </p>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <SiAmazonroute53 size={35} />
-                    <p className="text-[12px] font-bold">
-                      AWS
-                      <br />
-                      Route53
-                    </p>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <SiFigma size={35} />
-                    <p className="text-[12px] font-bold">Figma</p>
-                  </div>
                 </div>
               </li>
             </ul>

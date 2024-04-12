@@ -50,7 +50,41 @@ const index = (props) => {
                   4명 (backend 4명 / frontend 4명)
                 </div>
               </li>
-
+              <li className="mobile:hidden">
+                <div className="text-start font-extrabold text-[23px] mt-3">
+                  기술 스택
+                </div>
+                <div className="flex justify-around mt-1">
+                  <div className="flex flex-col items-center">
+                    <FaHtml5 size={35} />
+                    <p className="text-[12px] font-bold">Html5</p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <IoLogoJavascript size={35} />
+                    <p className="text-[12px] font-bold">Javascript</p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <FaNodeJs size={35} />
+                    <p className="text-[12px] font-bold">Node.js</p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiExpress size={35} />
+                    <p className="text-[12px] font-bold">Express</p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiSocketdotio size={35} />
+                    <p className="text-[12px] font-bold">Socket.io</p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiMysql size={35} />
+                    <p className="text-[12px] font-bold">Mysql</p>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiAmazonaws size={35} />
+                    <p className="text-[12px] font-bold">AWS</p>
+                  </div>
+                </div>
+              </li>
               <li>
                 <div className="text-start font-extrabold text-[20px] mobile:text-[14px] mt-3">
                   담당 업무
@@ -102,41 +136,6 @@ const index = (props) => {
                       </div>
                     </li>
                   </ul>
-                </div>
-              </li>
-              <li className="mobile:hidden">
-                <div className="text-start font-extrabold text-[23px] mt-3">
-                  기술 스택
-                </div>
-                <div className="flex justify-around mt-1">
-                  <div className="flex flex-col items-center">
-                    <FaHtml5 size={35} />
-                    <p className="text-[12px] font-bold">Html5</p>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <IoLogoJavascript size={35} />
-                    <p className="text-[12px] font-bold">Javascript</p>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <FaNodeJs size={35} />
-                    <p className="text-[12px] font-bold">Node.js</p>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <SiExpress size={35} />
-                    <p className="text-[12px] font-bold">Express</p>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <SiSocketdotio size={35} />
-                    <p className="text-[12px] font-bold">Socket.io</p>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <SiMysql size={35} />
-                    <p className="text-[12px] font-bold">Mysql</p>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <SiAmazonaws size={35} />
-                    <p className="text-[12px] font-bold">AWS</p>
-                  </div>
                 </div>
               </li>
             </ul>
